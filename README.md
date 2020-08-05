@@ -2,20 +2,28 @@
 The decompile-apk tool consists of some scripts and different tools, it can provider auto decompile function for produce Java source code and resources from Android Apk files that displayed on GUI.
 
 * jd-gui  
+   
 ![jd-gui](screenshot/jd-gui.png)
 
 * jadx  
+ 
 ![jadx](screenshot/jadx.png)
 
 * classyshark  
+
 ![classyshark](screenshot/classyshark.png)
 
+* bytecode-viewer
+
+![bytecode-viewer](screenshot/bytecode-viewer.png)
+
 ## Tools
-* Apktool : v2.2.4
-* dex2jar : v2.1
-* jd-gui : v1.4.0
-* jadx : v0.6.1
-* android-classyshark : v8.0
+* [Apktool](https://github.com/iBotPeaches/Apktool) : v2.4.1
+* [dex2jar](https://github.com/pxb1988/dex2jar) : v2.1
+* [jd-gui](https://github.com/java-decompiler/jd-gui) : v1.6.6
+* [jadx](https://github.com/skylot/jadx) : v1.1.0
+* [android-classyshark](https://github.com/google/android-classyshark) : v8.2
+* [bytecode-viewer](https://github.com/Konloch/bytecode-viewer) : v2.9.22
 
 ## Platforms
 * Mac
@@ -38,6 +46,9 @@ sh jadx-apk.sh *.apk
 
 # using classyshark to decompile apk
 sh classyshark-apk.sh *.apk
+
+# using bytecode-viewer to decompile apk
+sh bytecode-viewer.sh *.apk
 
 ```
 
@@ -63,6 +74,13 @@ sh classyshark-apk.sh *.apk
 		* decompile code readability is high
 	* disadvantage
 		* resource files partially missing
+
+* bytecode-viewer
+	* advantage
+		* support apk, dex, jar, and so on
+		* better visual feedback
+	* disadvantage
+		* analyse file slower
 
 ## Todo
 * more decompile tools
